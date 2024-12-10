@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+
+}
+
+.card {
+    width: 360px;
+    height: min-content;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.card h5 {
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+.card form {
+    font-size: 20px;
+}
+
+.card form .form-group {
+    margin-bottom: 12px;
+}
+
+.card form input[type="submit"] {
+    font-size: 20px;
+    margin-top: 15px;
+}

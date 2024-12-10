@@ -1,0 +1,17 @@
+<body>
+
+<mat-card class="card-container" style="text-align: center;">
+  <mat-card-content>
+    <!-- Display user information here -->
+    <h1 class="card-title">Welcome, {{ user.displayName || user.email }}</h1>
+    <p *ngIf="user.photoURL" class="card-text">
+      <img [src]="user.photoURL" alt="{{ user.displayName }}" width="100" />
+    </p>
+    <button mat-raised-button color="primary" (click)="backToQuizSettings()">Start Quiz</button>
+    <button mat-raised-button routerLink="/quiz-results" color="accent">Quiz Results</button>
+    <button mat-raised-button color="warn" (click)="disconnect()">Disconnect</button>
+  </mat-card-content>
+</mat-card>
+
+</body>
+

@@ -1,0 +1,46 @@
+.correct-answer {
+  background-color: rgba(0, 255, 0, 0.3);
+  border: 2px solid #008000;
+}
+
+/* Style for the quiz container */
+quiz-container {
+  margin-bottom: 20px;
+}
+
+
+/* Style for the radio buttons */
+mat-radio-button {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Style for the correct answer */
+.correct-answer {
+  color: green;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  height: 2650px;;
+  width: 100%;;
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-size: cover;
+
+
+}
+.card-container {
+  max-width: 1000px;
+}
+
+
+
+
+/* Style for the quiz results container */
+quiz-results {
+  margin-top: 20px;
+}

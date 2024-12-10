@@ -1,0 +1,21 @@
+<body>
+  <mat-card class="card-container" style="text-align: center;">
+<div align="left" class="quiz-container" *ngFor="let question of questions; index as i">
+  <h3>{{ i + 1 }}. {{ question.question }}</h3>
+  <mat-radio-group [(ngModel)]="selectedAnswers[i]">
+    <mat-radio-button
+      *ngFor="let answer of question.all_answers; let j = index"
+      [value]="answer"
+      [ngClass]="{ 'correct-answer': submitted && answer === question.correct_answer }"
+    >
+      {{ answer }}
+    </mat-radio-button>
+  </mat-radio-group>
+</div>
+<button mat-raised-button color="primary" (click)="submitQuiz()" [disabled]="submitted">Submit Quiz</button>
+<div class="quiz-results" *ngIf="submitted">
+  <h2>Your Score: {{ score }}/{{ questions.length }}</h2>
+  <button mat-raised-button color="primary" (click)="backToQuizSettings()">Back to Quiz Settings</button>
+</div>
+  </mat-card>
+</body>
